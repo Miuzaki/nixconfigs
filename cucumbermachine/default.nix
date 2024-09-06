@@ -79,7 +79,6 @@ services.avahi.publish.userServices = true;
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [
-       firefox
        vesktop
        neovim
        neovide
@@ -95,6 +94,7 @@ filezilla
      ];
      shell = pkgs.nushell;
    };
+
 
  # Enable common container config files in /etc/containers
   virtualisation.containers.enable = true;
